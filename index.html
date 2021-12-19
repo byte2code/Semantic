@@ -189,12 +189,12 @@
         $('.links').on('click', function(e){
           e.preventDefault();
           var popId= $(this).attr("data-prsn");
-          
+          $(".popup_box").style("display", "flex");
           $("#" + popId).fadeIn();
         })
 
         $(".close_btn").on('click', function(){
-          $(this).parents('.popup_box').fadeOut();
+          $(".popup_box").style("display", "none");
           $("#" + popId).fadeOut();
         })
       })
