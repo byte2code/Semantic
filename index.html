@@ -31,14 +31,14 @@
               <div class="info">
                 <div class="name">mausam giri</div>
                 <div class="details">CEO, Founder</div>
-                <div class="links">
+                <div class="links" data-prsn="prsn-1">
                   <a href=""><i class="uil uil-arrow-right"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="popup_box">
-              <div class="close-btn"></div>
+            <div class="popup_box" id="prsn-1">
+              <div class="close_btn"></div>
               <div class="image"><img src="./assets/img/1.png" alt="" /></div>
               <div class="content">
                 <h2>
@@ -68,6 +68,22 @@
                 </div>
               </div>
             </div>
+            <div class="popup_box" id="prsn-1">
+              <div class="close_btn"></div>
+              <div class="image"><img src="./assets/img/1.png" alt="" /></div>
+              <div class="content">
+                <h2>
+                  Mausam <br>
+                  <span class="det">Web Designer</span>
+                </h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laudantium fugiat tempore ipsum? Obcaecati ipsam at assumenda,
+                  non facere laborum ea. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Fuga, consectetur!
+                </p>
+              </div>
+              </div>
           </div>
 
           <div class="card-body">
@@ -163,5 +179,25 @@
         </div>
       </div>
     </section>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+<script src="./src/js/app.js"></script>
+    <script>
+      $(function (){
+        $('.links').on('click', function(e){
+          e.preventDefault();
+          var popId= $(this).attr("data-prsn");
+          
+          $("#" + popId).fadeIn();
+        })
+
+        $(".close_btn").on('click', function(){
+          $(this).parents('.popup_box').fadeOut();
+          $("#" + popId).fadeOut();
+        })
+      })
+    </script>
   </body>
 </html>
