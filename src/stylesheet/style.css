@@ -5,19 +5,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*mkfsdks  */
 body {
   font-family: "Poppins", sans-serif;
-  background: rgb(17,17,17) fixed;
-  background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 48%, rgba(36,50,36,1) 100%); 
+  background: rgb(17, 17, 17) fixed;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(28, 28, 28, 1) 48%,
+    rgba(36, 50, 36, 1) 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
-body::after{
-  content: '';
+body::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +33,7 @@ body::after{
   opacity: 0.1;
 }
 
-.team{
+.team {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +42,7 @@ body::after{
   flex-direction: column;
 }
 
-.team h1{
+.team h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: #eee;
@@ -47,8 +52,8 @@ body::after{
   text-transform: capitalize;
 }
 
-.team h1::before{
-  content: '';
+.team h1::before {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -59,18 +64,18 @@ body::after{
   border-radius: 50%;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
 }
-.card{
+.card {
   width: 200px;
   height: 200px;
 }
-.box{
+.box {
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #eee;
@@ -81,12 +86,12 @@ body::after{
   width: 100%;
   height: 100%;
 }
-.box img{
+.box img {
   vertical-align: bottom;
   width: 100%;
   height: 100%;
 }
-.info{
+.info {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,25 +107,25 @@ body::after{
   transform-origin: 0%;
 }
 
-.name{
+.name {
   font-size: 25px;
   font-weight: 600;
   color: #eee;
 }
 
-.detail{
+.detail {
   font-size: 16px;
   color: #eee;
   font-weight: 500;
   margin-top: -10px;
 }
 
-.links{
+.links {
   display: flex;
   justify-content: center;
 }
 
-.links a{
+.links a {
   width: 35px;
   height: 35px;
   background-color: #eee;
@@ -132,25 +137,23 @@ body::after{
   font-size: 20px;
   text-decoration: none;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.links a:hover{
+.links a:hover {
   background-color: transparent;
   color: #eee;
 }
 
-.box:hover .info{
+.box:hover .info {
   transform: scale(1);
 }
-
 
 /* 
 
 */
 
-
-.popup_wrap{
+.popup_wrap {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -159,8 +162,8 @@ body::after{
   color: #eee;
 }
 
-.overlay{
-  background-color: rgba(0,0,0,0.5);
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
   left: 0;
@@ -171,7 +174,7 @@ body::after{
   display: flex;
   flex-direction: column;
 } */
-.popup_box{
+.popup_box {
   background-color: #fff;
   color: #000;
   max-width: 700px;
@@ -189,22 +192,22 @@ body::after{
   border-radius: 5px;
 }
 
-.popup_box .image{
+.popup_box .image {
   flex: 0 0 40%;
   max-width: 40%;
 }
 
-.popup_box .content{
+.popup_box .content {
   flex: 0 0 60%;
   max-width: 60%;
   text-align: left;
 }
-.content h2{
+.content h2 {
   text-align: left;
 }
 /* .content h2, p, span{
   margin-bottom: 10px;
 } */
-.det{
+.det {
   text-align: left;
 }
